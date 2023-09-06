@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Sidebar Navigation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(174, 206, 110);
+            color: purple;
+            font-style: bold;
+        }
+        .sidebar {
+            position: fixed;
+            width: 200px;
+            color: black;
+            height: 100%;
+            
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 40px;
+            width: 170px;
+            margin-left: 30px;
+        }
+        .sidebar li {
+            margin: 8px;
+            padding: 7px;
+            border-right: 16px solid black;
+            background-color: white;
+            font-size: 17px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: blue;
+        }
+        .sidebar a:active, a:hover{
+            color: blueviolet;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 5px;
+            font-size: 20px;
+        }
+        footer{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+        <li><a href=#>Home page</a>
+        <li><a href=#>Musings</a>
+        <li><a href=#>My town</a>
+        <li><a href=#>Links</a>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>My first styled page</h1>
+        <p> Welcome to my styled page! <br><br>
+            It lacks images, but at least it has style. It also has links, even if they dont go anywhere...<br><br>
+            There should be more here.
+        </p>
+        <hr>
+        <footer>Made 4 Sept 2023<br>
+            by Nitya GV
+        </footer>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            
+        }
+        td, th{
+            border: 1px solid black;
+        }
+        input#inp{
+            width: 98.7%;
+        }
+        th{
+            text-align: center;
+            font-style: bold;
+        }
+        tr.my{
+            text-align: right;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form>
+      <center>
+        <table>
+            <caption style="color: blue; font-size: 30px;"><b>Registration form</b></caption>
+            <br>
+            <tr>
+                <th><label for="fn">First Name</label></th>
+                <td><input type="text" name="fn" id="inp" ></td>
+            </tr>
+            <tr>
+                <th><label for="ln">Last Name</label></th>
+                <td><input type="text" name="ln" id="inp"></td>
+            </tr>
+            <tr>
+                <th><label for="email">Email</label></th>
+                <td><input type="email" name="email" id="inp"></td>
+            </tr>
+            <tr>
+                <th><label for="pass">Password</label></th>
+                <td><input type="password" name="pass" id="inp"></td>
+            </tr>
+            <tr>
+                <th><label for="repass">Re-enter Password</label></th>
+                <td><input type="password" name="repass" id="inp"></td>
+            </tr>
+            <tr>
+                <th rowspan = "2"><label>Gender</label></th>
+                <td>
+                    <input type="radio" name="gender">Male</td>
+                
+            </tr>
+            <tr><td><input type="radio" name="gender">Female
+            </td></tr>
+            <tr>
+                <th><label for="age">Age:</label></th>
+                <td><input type="number" name="age" id="inp"></td>
+            </tr>
+            <tr>
+                <th><label for ="add">Address</label></th>
+                <td><textarea name = "add" cols = "80" rows = "6"></textarea></td>
+            </tr>
+            <tr>
+                <th><label>Country</label></th>
+                <td>
+                    <select>
+                        <option>Choose your country</option>
+                        <option>India</option>
+                        <option>United States Of America</option>
+                        <option>Spain</option>
+                        <option>England</option>
+                        <option>Italy</option>
+                        <option>Taiwan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label>Languages known</label></th>
+                <td>
+                    <input type="checkbox">English
+                    <input type="checkbox">Kannada
+                    <input type="checkbox">Hindi
+                    <input type="checkbox">Telugu
+                </td>
+            </tr>
+            <tr><td colspan="2"><input type="checkbox"> Hereby I declare all the given details are true</td></tr>
+            <tr class="my"><td colspan="2" >Login in to <a href ="https://codemithra.com/">Ethnus </a>website</right></td></tr>
+            </table><br>
+                <input type="submit" value="Register">
+      </center>
+    </form>
+</body>
+
+</html>

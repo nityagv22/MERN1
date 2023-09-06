@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table.one th{
+            text-align: center;
+        }
+        table.one{
+            background-color: #8bc9c3;
+            border-radius: 10px;
+            border: 2px solid black;
+            width: 50%;
+            
+        }
+        table.one td.qw, table.one th{
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 2px;
+        }
+
+
+        table.two {
+  table-layout: fixed;
+  width: 250px;
+  height: 200px;
+  border-spacing: 12px;
+}
+
+table.two td {
+  border: 2px solid rgb(106, 171, 9);
+  width: 100%;
+  border-spacing: 10px;
+}
+
+table.two td.slight {
+  border-radius: 9px;
+}
+
+table.two td.lit {
+  border-radius: 15px;
+}
+
+table.two td.normal {
+  border-radius: 3px;
+}
+
+table.two td.round {
+  border-radius: 40px;
+}
+
+table.two td.diff {
+  border-radius: 0 15px 0 15px;
+}
+
+    </style>
+</head>
+<body><center>
+    <table class = "one">
+        <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        </tr>
+        <tr>
+            <td class="qw">Jill</td>
+            <td class="qw">Smith</td>
+            <td class="qw">50</td>
+
+        </tr>
+        <tr>
+            <td class="qw">Eve</td>
+            <td class="qw">Jackson</td>
+            <td class="qw">94</td>
+
+        </tr>
+        <tr>
+            <td class="qw">John</td>
+            <td class="qw">Doe</td>
+            <td class="qw">80</td>
+
+        </tr>
+    </table>
+<br><br><br>
+   <table class = "two">
+    <tr><td class = "slight"></td>
+        <td class = "slight"></td>
+        <td class = "lit"></td>
+    </tr>
+    <tr><td class = "slight"></td>
+        <td class = "normal"></td>
+        <td class = "lit"></td>
+    </tr>
+    <tr><td class = "round"></td>
+        <td class = "normal"></td>
+        <td class = "diff"></td>
+    </tr>
+   </table>
+    
+    </center>
+</body>
+</html>
